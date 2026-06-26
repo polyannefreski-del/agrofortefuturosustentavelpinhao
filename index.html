@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPinhão | Agro Forte, Futuro Sustentável</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>🌲 EcoPinhão</h1>
+        <p>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente.</p>
+
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#coleta">Coleta Sustentável</a>
+            <a href="#calculadora">Calculadora</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Preservar hoje para colher amanhã.</h2>
+        <p>
+            Conheça a importância da araucária e descubra como a coleta consciente
+            do pinhão ajuda a proteger a natureza e fortalecer o agro.
+        </p>
+
+        <button onclick="saibaMais()">Saiba Mais</button>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+
+        <h2>🌲 Sobre a Araucária</h2>
+
+        <p>
+            A araucária é uma árvore símbolo da Região Sul do Brasil.
+            Seu fruto produz o pinhão, uma importante fonte de alimento
+            para animais e também para diversas famílias que vivem da
+            coleta sustentável.
+        </p>
+
+    </section>
+
+    <!-- Coleta -->
+    <section id="coleta">
+
+        <h2>🌰 Como Fazer a Coleta Sustentável</h2>
+
+        <ol>
+            <li>Espere o período correto da safra.</li>
+            <li>Coleta apenas pinhões maduros.</li>
+            <li>Evite retirar pinhas verdes da árvore.</li>
+            <li>Deixe parte das sementes para os animais.</li>
+            <li>Ajude na preservação da floresta.</li>
+        </ol>
+
+    </section>
+
+    <!-- Calculadora -->
+    <section id="calculadora">
+
+        <h2>🧮 Calculadora Sustentável</h2>
+
+        <label>Pinhões coletados (kg)</label>
+        <br>
+
+        <input
+            type="number"
+            id="coletado"
+            placeholder="Ex: 80">
+
+        <br><br>
+
+        <label>Pinhões deixados na natureza (kg)</label>
+
+        <br>
+
+        <input
+            type="number"
+            id="preservado"
+            placeholder="Ex: 25">
+
+        <br><br>
+
+        <button onclick="verificarColeta()">
+            Verificar
+        </button>
+
+        <h3 id="resultado"></h3>
+
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz">
+
+        <h2>🎯 Quiz</h2>
+
+        <p>Quando é permitido colher pinhão?</p>
+
+        <input type="radio" name="quiz" value="1">
+        Qualquer época
+
+        <br>
+
+        <input type="radio" name="quiz" value="2">
+        Antes da maturação
+
+        <br>
+
+        <input type="radio" name="quiz" value="3">
+        Apenas na época permitida
+
+        <br><br>
+
+        <button onclick="corrigirQuiz()">
+            Responder
+        </button>
+
+        <h3 id="respostaQuiz"></h3>
+
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+
+        <h2>Contato</h2>
+
+        <p>
+            Projeto desenvolvido para incentivar a preservação da
+            Araucária e a coleta sustentável do pinhão.
+        </p>
+
+        <p>
+            © 2026 - EcoPinhão
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
